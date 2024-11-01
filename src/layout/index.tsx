@@ -1,4 +1,4 @@
-import { FlexBox, FlexDirection } from "@/components/loading/base";
+import { FlexBox, FlexDirection } from "@/components/base";
 import { Watermark } from "antd";
 import styled from "styled-components";
 import { LayoutLoading } from "./loading";
@@ -7,6 +7,7 @@ import { Message } from "@/components/message";
 import { Aside } from "./aside";
 import { Header } from "./header";
 import { Outlet } from "react-router-dom";
+import { Footer } from "./footer";
 
 
 const PageWrapper = styled(FlexBox)`
@@ -33,6 +34,7 @@ export function Component() {
                     <PageWrapper $flex='1' $direction={FlexDirection.COLUMN}>
                         <Outlet />
                     </PageWrapper>
+                    <Footer/>
                 </FlexBox>
             </FlexBox>
         </WatermarkStyle>

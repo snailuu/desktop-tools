@@ -1,5 +1,5 @@
 import { Link } from "@/components/link";
-import { FlexBox } from "@/components/loading/base";
+import { FlexBox } from "@/components/base";
 import { UIMatchWithHandle } from "@/types";
 import { useMemo } from "react";
 import { useMatches } from "react-router-dom";

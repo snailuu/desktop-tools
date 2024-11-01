@@ -1,5 +1,5 @@
 import { AppList } from "@/components/app-list";
-import { FlexDirection } from "@/components/loading/base";
+import { FlexDirection } from "@/components/base";
 import { memo } from "react";
 import { TbHomeFilled } from "react-icons/tb";
 import styled from "styled-components";

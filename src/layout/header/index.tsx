@@ -1,5 +1,5 @@
 import { AppearBox } from "@/components/appear-box";
-import { FlexAlign, FlexBox, FlexJustify, ShadowFlexBox } from "@/components/loading/base";
+import { FlexAlign, FlexBox, FlexJustify, ShadowFlexBox } from "@/components/base";
 import { Show } from "@/components/show";
 import { UIMatchWithHandle } from "@/types";
 import { IoCaretBack } from 'react-icons/io5';
@@ -45,9 +45,10 @@ export function Header() {
     const matches = useMatches() as UIMatchWithHandle<PageInfo>[];
     const lastMatch = useMemo(() => matches.at(-1), [matches]);
 
+    console.log('lastMatch:', lastMatch)
     const title = lastMatch?.handle?.title;
-    const needBackIcon = lastMatch?.handle.needBackIcon;
-    const rightArea = lastMatch?.handle.rightArea;
+    const needBackIcon = lastMatch?.handle?.needBackIcon;
+    const rightArea = lastMatch?.handle?.rightArea;
 
     return (
         <HeaderContent $gap='1' $justifyContent={FlexJustify.BETWEEN}>

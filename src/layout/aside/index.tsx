@@ -1,4 +1,4 @@
-import { FlexDirection, ShadowFlexBox } from "@/components/loading/base";
+import { FlexDirection, ShadowFlexBox } from "@/components/base";
 import { useRootFontSize } from "@/hooks/use-root-font-size";
 import { useLayoutStoreSlice } from "@/store";
 import { useEffect, useRef, useState } from "react";
@@ -31,7 +31,7 @@ export function Aside() {
 
     useEffect(() => {
         if(!asideRef.current) return;
-        setWidth(`${asideRef.current.offsetWidth / rootFontSize}em`);
+        setWidth(`${asideRef.current.offsetWidth / rootFontSize}rem`);
     }, [rootFontSize]);
 
     return (

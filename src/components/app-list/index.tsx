@@ -1,8 +1,8 @@
 import { ApplyStyle } from "@/types";
 import styled from "styled-components";
 import { Link } from "../link";
-import { applyStyleSheet } from "../loading/base/utils";
-import { FlexAlign, FlexBox, FlexDirection, FlexJustify, FlexWrap, ShadowFlexBox } from "../loading/base";
+import { applyStyleSheet } from "../base/utils";
+import { FlexAlign, FlexBox, FlexDirection, FlexJustify, FlexWrap, ShadowFlexBox } from "../base";
 import { AppInfo, appList } from "./constant";
 import { matchPath, useMatches } from "react-router-dom";
 import { useCallback, useMemo } from "react";

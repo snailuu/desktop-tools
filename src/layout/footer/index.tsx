@@ -1,4 +1,4 @@
-import { FlexAlign, ShadowFlexBox } from "@/components/loading/base";
+import { FlexAlign, ShadowFlexBox } from "@/components/base";
 import { getLayoutStore, useLayoutStoreSlice } from "@/store";
 import { BsTextIndentLeft } from "react-icons/bs";
 import styled from "styled-components";
@@ -11,7 +11,7 @@ const FooterContent = styled(ShadowFlexBox)`
 const ExpandIcon = styled(BsTextIndentLeft)<{ $expandAside: boolean}>`
     font-size: 2rem;
     transition: transform 300ms;
-    transform: ${({ $expandAside }) => $expandAside ? "rotate(90deg)" : "rotate(0)"};
+    transform: ${({ $expandAside }) => $expandAside ? "rotate(180deg)" : "rotate(0)"};
 `
 
 export function Footer() {
