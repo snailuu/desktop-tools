@@ -1,0 +1,1 @@
+export const PAGE_INFO_KEY = 'sn:current-page-info'
