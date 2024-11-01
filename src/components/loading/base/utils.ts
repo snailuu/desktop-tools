@@ -27,3 +27,13 @@ export function propsHandler<T extends Record<string, unknown>>(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return newProps as any;
 }
+
+
+export function applyStyleSheet(key: string) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (props: any) => {
+        const style = props[key];
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        return style as any;
+    };
+}
